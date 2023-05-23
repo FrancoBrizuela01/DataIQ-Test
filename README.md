@@ -2,6 +2,10 @@
 
 Este proyecto implementa una lista de usuarios obtenidos a través de una petición REST a https://jsonplaceholder.typicode.com/users. Utiliza la tecnología ReactJS en conjunto con Material-UI (Mui) para construir una interfaz de usuario interactiva y responsive. Además, se utiliza la biblioteca Notistack para mostrar alertas.
 
+## Visitar sitio web
+
+Visita la página web [aquí](lista-usuarios-fb.netlify.app) para obtener más información.
+
 ### Requisitos
 
 - Realizar una petición REST a la URL mencionada para obtener los usuarios.
