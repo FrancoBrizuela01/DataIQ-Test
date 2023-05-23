@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+## Ejercicio Propuesto - Lista de Usuarios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto implementa una lista de usuarios obtenidos a través de una petición REST a https://jsonplaceholder.typicode.com/users. Utiliza la tecnología ReactJS en conjunto con Material-UI (Mui) para construir una interfaz de usuario interactiva y responsive. Además, se utiliza la biblioteca Notistack para mostrar alertas.
 
-## Available Scripts
+### Requisitos
 
-In the project directory, you can run:
+- Realizar una petición REST a la URL mencionada para obtener los usuarios.
+- Mostrar los siguientes datos de cada usuario:
+  - Nombre de usuario
+  - Username
+  - Email
+  - Ciudad de residencia
+  - Teléfono
+  - Nombre de la empresa
+- La información de los usuarios no debe ser visualizada en una tabla, sino de una manera que consideres adecuada y visualmente atractiva.
+- Agregar un único buscador que permita filtrar los usuarios por nombre, email y ciudad en tiempo real.
+- La aplicación debe ser responsive, es decir, adaptarse a diferentes tamaños de pantalla para una experiencia de usuario óptima en dispositivos móviles y de escritorio.
+
+### Instalación y Ejecución
+
+1. Clona este repositorio en tu máquina local.
+2. Abre una terminal y navega hasta el directorio raíz del proyecto.
+3. Ejecuta el siguiente comando para instalar las dependencias:
+
+### `npm install`
+
+4. Después de la instalación, ejecuta el siguiente comando para iniciar la aplicación:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. La aplicación se ejecutará en tu navegador predeterminado. Si no se abre automáticamente, puedes acceder a ella en la siguiente URL: http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Estructura del Proyecto
 
-### `npm test`
+El proyecto sigue una estructura básica de una aplicación ReactJS, con los siguientes archivos y directorios importantes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `src/`: Directorio principal que contiene todo el código fuente de la aplicación.
+- `components/`: Directorio que almacena los componentes utilizados en la interfaz de usuario.
+- `views/`: Directorio que contiene las páginas principales de la aplicación.
+- `App.js`: Componente raíz de la aplicación que define la estructura general.
+- `index.js`: Punto de entrada de la aplicación.
+- `public/`: Directorio que contiene los archivos estáticos públicos de la aplicación.

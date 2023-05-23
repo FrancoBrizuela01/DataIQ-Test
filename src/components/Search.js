@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Grid } from "@mui/material";
 
 const Search = ({ users, setFilteredUsers, setQuery }) => {
-  const [filtro, setFiltro] = useState("");
+  const [filter, setFilter] = useState("");
 
   const handleChange = (event) => {
     const valorFiltro = event.target.value.toLowerCase();
     setQuery(valorFiltro);
-    setFiltro(valorFiltro);
+    setFilter(valorFiltro);
 
     const resultadosFiltrados = users.filter(
       (usuario) =>
@@ -22,15 +22,14 @@ const Search = ({ users, setFilteredUsers, setQuery }) => {
   return (
     <div>
       <Grid container justifyContent="center" alignItems="center">
-        <Grid item sx={{ width: 300, mb: 5 }}>
+        <Grid item xs={12} sm={8} md={6} lg={4}>
           <TextField
             label="Buscar"
-            value={filtro}
+            value={filter}
             onChange={handleChange}
             fullWidth
             margin="normal"
-            color="success"
-            // focused
+            color="primary"
           />
         </Grid>
       </Grid>
