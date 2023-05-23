@@ -4,7 +4,7 @@ Este proyecto implementa una lista de usuarios obtenidos a través de una petici
 
 ## Visitar sitio web
 
-Visita la página web [aquí](lista-usuarios-fb.netlify.app) para obtener más información.
+Visita la página web en lista-usuarios-fb.netlify.app para obtener más información.
 
 ### Requisitos
 
