@@ -34,6 +34,10 @@ Visita la página web en https://lista-usuarios-fb.netlify.app para obtener más
 
 5. La aplicación se ejecutará en tu navegador predeterminado. Si no se abre automáticamente, puedes acceder a ella en la siguiente URL: http://localhost:3000.
 
+6. Para poder correr los test unitarios, ejecuta el siguiente comando para iniciar el test:
+
+### `npm run test`
+
 ### Estructura del Proyecto
 
 El proyecto sigue una estructura básica de una aplicación ReactJS, con los siguientes archivos y directorios importantes:
