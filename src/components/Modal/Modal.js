@@ -19,13 +19,13 @@ import EmailIcon from "@mui/icons-material/Email";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import BusinessIcon from "@mui/icons-material/Business";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import Maps from "./Maps";
+import Maps from "../Maps/Maps";
 
 const Transition = React.forwardRef((props, ref) => (
   <Fade ref={ref} {...props} />
 ));
 
-const ModalUser = ({ open, handleClose, user }) => {
+const Modal = ({ open, handleClose, user }) => {
   const theme = useTheme();
 
   return (
@@ -150,4 +150,4 @@ const ModalUser = ({ open, handleClose, user }) => {
   );
 };
 
-export default ModalUser;
+export default Modal;

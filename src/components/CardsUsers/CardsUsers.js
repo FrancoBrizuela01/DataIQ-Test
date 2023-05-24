@@ -11,7 +11,7 @@ import {
   styled,
   Grid,
 } from "@mui/material";
-import ModalUser from "./Modal";
+import Modal from "../Modal/Modal";
 
 const CardsUsers = ({ user }) => {
   const [open, setOpen] = useState(false);
@@ -99,13 +99,13 @@ const CardsUsers = ({ user }) => {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" onClick={() => setOpen(true)}>
+          <Button size="small" sx={{ p: "8px" }} onClick={() => setOpen(true)}>
             Ver más
           </Button>
         </CardActions>
       </StyledCard>
 
-      <ModalUser open={open} handleClose={() => setOpen(false)} user={user} />
+      <Modal open={open} handleClose={() => setOpen(false)} user={user} />
     </>
   );
 };

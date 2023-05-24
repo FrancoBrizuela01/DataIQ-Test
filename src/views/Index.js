@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useSnackbar } from "notistack";
 import { Box, CircularProgress, Grid, Typography } from "@mui/material";
 
-import Navbar from "../components/NavBar";
-import Search from "../components/Search";
-import CardsUsers from "../components/CardsUsers";
+import Navbar from "../components/Navbar/NavBar";
+import Search from "../components/Search/Search";
+import CardsUsers from "../components/CardsUsers/CardsUsers";
 
 function Index() {
   const { enqueueSnackbar } = useSnackbar();
