@@ -59,7 +59,10 @@ const ModalUser = ({ open, handleClose, user }) => {
           </Box>
         </DialogTitle>
 
-        <DialogContent dividers sx={{ minHeight: "300px" }}>
+        <DialogContent
+          dividers
+          sx={{ minHeight: "300px", backgroundColor: "#EBEAEA" }}
+        >
           <Grid container spacing={6}>
             <Grid item xs={12} sm={6}>
               <ListItem>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Avatar,
   Button,
@@ -15,6 +15,11 @@ import ModalUser from "./Modal";
 
 const CardsUsers = ({ user }) => {
   const [open, setOpen] = useState(false);
+  const [avatarColor, setAvatarColor] = useState(null);
+
+  useEffect(() => {
+    setAvatarColor(getRandomColor());
+  }, []);
 
   const StyledCard = styled(Card)(({ theme }) => ({
     height: "100%",
@@ -25,6 +30,14 @@ const CardsUsers = ({ user }) => {
     color: theme.palette.primary.contrastText,
     borderRadius: theme.spacing(2),
     boxShadow: theme.shadows[4],
+  }));
+
+  const StyledAvatar = styled(Avatar)(({ theme }) => ({
+    width: theme.spacing(15),
+    height: theme.spacing(15),
+    margin: "auto",
+    marginTop: theme.spacing(2),
+    backgroundColor: avatarColor,
   }));
 
   const getRandomColor = () => {
@@ -51,14 +64,6 @@ const CardsUsers = ({ user }) => {
     ];
     return colors[Math.floor(Math.random() * colors.length)];
   };
-
-  const StyledAvatar = styled(Avatar)(({ theme }) => ({
-    width: theme.spacing(15),
-    height: theme.spacing(15),
-    margin: "auto",
-    marginTop: theme.spacing(2),
-    backgroundColor: getRandomColor(),
-  }));
 
   return (
     <>
